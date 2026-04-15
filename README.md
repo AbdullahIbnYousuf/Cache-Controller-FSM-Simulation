@@ -6,7 +6,6 @@ This project simulates a blocking cache controller finite state machine (FSM) us
 - A direct-mapped cache with write-back and write-allocate policy
 - A simple main memory that never misses and takes 2 cycles to read or write blocks
 
-The FSM implementation follows the state diagram documented in [fsm_diagram.md](fsm_diagram.md). Every state in the diagram maps one-to-one to a state in the code.
 
 ## FSM States (22 states, matching fsm_diagram.md)
 
@@ -120,7 +119,6 @@ Both hexadecimal (`0x...`) and decimal addresses are accepted.
 --help               Show usage
 ```
 
-Memory latency is fixed at 2 cycles, matching the FSM diagram's `MEM_WAIT_1 → MEM_WAIT_2` states.
 
 ## Output
 
