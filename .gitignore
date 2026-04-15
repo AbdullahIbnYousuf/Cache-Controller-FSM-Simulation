@@ -1,0 +1,9 @@
+cache_sim
+cache_sim.exe
+*.o
+*.obj
+*.log
+outputs/*.csv
+outputs/*.txt
+!outputs/reference/*.csv
+!outputs/reference/*.txt
