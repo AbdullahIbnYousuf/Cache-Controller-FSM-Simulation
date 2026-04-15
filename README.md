@@ -45,22 +45,24 @@ Makefile                   Build and run commands
 
 ## Build
 
-### Linux / macOS / MinGW (g++)
+### Linux / macOS
 
 ```bash
 make
 ```
 
-### Manual build
+### Windows (MinGW)
+
+> **Note:** MinGW ships `mingw32-make` instead of `make`. On Windows, replace `make` with `mingw32-make` in all commands below.
+
+```powershell
+mingw32-make
+```
+
+### Manual build (any platform)
 
 ```bash
 g++ -std=c++17 -Wall -Wextra -O2 cache_sim.cpp -o cache_sim
-```
-
-### Windows (if no make available)
-
-```powershell
-g++ -std=c++17 -Wall -Wextra -O2 cache_sim.cpp -o cache_sim.exe
 ```
 
 ## Run

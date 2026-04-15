@@ -14,7 +14,7 @@ namespace fs = std::filesystem;
 // ── request types ───────────────────────────────────────────────────
 enum class ReqType { Read, Write };
 
-// ── FSM states (match fsm_diagram.md exactly) ───────────────────────
+// ── FSM states ───────────────────────
 enum class State
 {
     Idle,

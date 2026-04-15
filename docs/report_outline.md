@@ -1,4 +1,4 @@
-# Report Outline (Use This to Write Your Own PDF)
+# Report Outline
 
 This file is a structure/checklist only. Write the final report in your own words.
 
