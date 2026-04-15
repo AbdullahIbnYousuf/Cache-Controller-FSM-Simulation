@@ -52,7 +52,10 @@ make
 
 ### Windows (MinGW)
 
-> **Note:** MinGW ships `mingw32-make` instead of `make`. On Windows, replace `make` with `mingw32-make` in all commands below.
+**🚨 IMPORTANT FOR WINDOWS USERS:** If you are using MinGW, the standard `make` command will usually result in an error like `'make' is not recognized`. 
+MinGW installs it as `mingw32-make` instead. 
+
+**You must use `mingw32-make` instead of `make` for all commands in this README.**
 
 ```powershell
 mingw32-make
@@ -82,15 +85,16 @@ g++ -std=c++17 -Wall -Wextra -O2 cache_sim.cpp -o cache_sim
 
 ```bash
 make run-all
+# Windows users: mingw32-make run-all
 ```
 
 Or individually:
 
 ```bash
-make run-full
-make run-hits
-make run-writeback
-make run-conflict
+make run-full       # Windows: mingw32-make run-full
+make run-hits       # Windows: mingw32-make run-hits
+make run-writeback  # Windows: mingw32-make run-writeback
+make run-conflict   # Windows: mingw32-make run-conflict
 ```
 
 ## Input File Format
@@ -140,6 +144,7 @@ Generate all reference artifacts:
 
 ```bash
 make run-all
+# Windows users: mingw32-make run-all
 ```
 
 This produces trace CSVs and summary files in `outputs/reference/` for all 4 workloads.
